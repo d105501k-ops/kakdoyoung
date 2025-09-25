@@ -1,0 +1,136 @@
+/* ================== CSS UNTUK TAMPILAN (SATU FILE UNTUK SEMUA HALAMAN) ================== */
+:root {
+    --dark-purple: #b57edc;
+    --light-purple: #dbb6ee;
+    --lavender: #fff0ff;
+    --text-light: #fefefe;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--dark-purple);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER DAN NAVIGASI */
+.header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--lavender);
+    margin: 0 0 15px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.header nav a {
+    color: var(--lavender);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #fff;
+}
+
+.header nav a.active {
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* HOME PAGE STYLES */
+.welcome-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--lavender);
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* POEM SECTION STYLES */
+.poem-section {
+    background-color: var(--light-purple);
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.poem-section p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem; /* Ukuran font diubah jadi lebih kecil */
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--lavender);
+}
+
+/* GALLERY SECTION STYLES */
+.gallery-section {
+    padding: 40px 0;
+}
+
+.gallery-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--lavender);
+    margin-bottom: 40px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.photo-item {
+    background-color: var(--light-purple);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #ccc;
+}
